@@ -14,16 +14,14 @@
           <h1 class="title">Is it a Palindrome?</h1>
         </header>
         <div class="panel">
-          <form action="">
+          <form action="" id="palindrome-form">
             <label for="text-input">Type a text to check for a palindrome</label>
             <div class="input-cont">
-              <input type="text" id="text-input">
+              <input type="text" id="text-input" autocomplete="off">
               <button type="submit" id="check-btn">Check</button>
             </div>
           </form>
-          <div class="result">
-            <p class="result-txt">{word} is a palindrome</p>
-          </div>
+          <p class="result-txt hidden" id="result"></p>
         </div>
       </article>
       <article class="info">
@@ -42,6 +40,7 @@
       </footer>
     </section>
   </main>
+  <script src="./script.js"></script>
 </body>
 </html>
 
